@@ -1,0 +1,7 @@
+pika
+tensorflow
+numpy
+scikit-learn
+keras
+requests
+matplotlib
