@@ -7,3 +7,5 @@ For running all the client codes you can execute the run.py file in this folder.
 
 
 ### Author Links
+Link to the Arxiv paper: 
+https://arxiv.org/abs/2404.13278
