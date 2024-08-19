@@ -1,23 +1,31 @@
-Federated Domain Generalization Algorithm for Condition Monitoring (FDG_CM)
+# Federated Domain Generalization Algorithm for Condition Monitoring (FDG_CM)
+
 This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm is a novel Federated Domain Generalization (FDG) technique designed specifically for condition monitoring in manufacturing processes.
 
-Note: The code is currently under development and is not yet complete.
+**Note:** The code is currently under development and is not yet complete.
 
-Paper Information
-The paper associated with this repository has been accepted to the Journal of Manufacturing Systems (JMS) and is currently under review. Once finalized, it will provide a comprehensive overview of the FDG_CM algorithm and its applications.
+## Paper Information
 
-Repository Structure
-src/: Contains all client and server code.
-run.py: Script to execute all client codes. You can modify this script to select specific clients for execution on each edge device.
-Requirements
+The paper associated with this repository has been accepted to the *Journal of Manufacturing Systems (JMS)* and is currently under review. Once finalized, it will provide a comprehensive overview of the FDG_CM algorithm and its applications.
+
+## Repository Structure
+
+- **src/**: Contains all client and server code.
+- **run.py**: Script to execute all client codes. You can modify this script to select specific clients for execution on each edge device.
+
+## Requirements
+
 To run the FDG_CM algorithm, you will need:
 
-One CPU core per client node.
-For example, to run 16 clients, you will require 4 Raspberry Pis, each equipped with 4 CPU cores.
-Instructions
-Navigate to the src/ folder.
-Use the run.py script to execute the desired clients.
-Feel free to modify run.py to fit your specific deployment needs.
+- One CPU core per client node.
+- For example, to run 16 clients, you will require 4 Raspberry Pis, each equipped with 4 CPU cores.
+
+## Instructions
+
+1. Navigate to the `src/` folder.
+2. Use the `run.py` script to execute the desired clients.
+
+Feel free to modify `run.py` to fit your specific deployment needs.
 
 ### Author Links
 Link to the Arxiv paper: 
