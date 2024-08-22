@@ -1,4 +1,4 @@
-# Federated Domain Generalization Algorithm for Condition Monitoring (FDG_CM)
+# Federated Domain Generalization Algorithm for Condition Monitoring (FDG-CM)
 
 This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm is a novel Federated Domain Generalization (FDG) technique designed specifically for condition monitoring in manufacturing processes. This framework has been tested on Ultrasonic metal welding data but can be extensible on other condition monitoring data. 
 
