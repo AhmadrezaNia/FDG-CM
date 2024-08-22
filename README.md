@@ -1,6 +1,6 @@
 # Federated Domain Generalization Algorithm for Condition Monitoring (FDG_CM)
 
-This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm is a novel Federated Domain Generalization (FDG) technique designed specifically for condition monitoring in manufacturing processes. This framework has been tested on Ultrasonic metal welding data, but can be extensible on other condition monitoring data. 
+This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm is a novel Federated Domain Generalization (FDG) technique designed specifically for condition monitoring in manufacturing processes. This framework has been tested on Ultrasonic metal welding data but can be extensible on other condition monitoring data. 
 
 **Note:** The code is currently under development and is not yet complete.
 
@@ -19,6 +19,7 @@ To run the FDG_CM algorithm, you will need:
 
 - One CPU core per client node.
 - For example, to run 16 clients, you will require 4 Raspberry Pis, each equipped with 4 CPU cores.
+- Using RabbitMQ borker for routing messages.
 
 ## Instructions
 
