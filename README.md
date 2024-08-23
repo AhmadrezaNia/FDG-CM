@@ -10,7 +10,7 @@ The paper associated with this repository has been accepted to the *Journal of M
 
 ## Repository Structure
 
-- **src/**: Contains all client and server code.d
+- **src/**: Contains all client and server code.
 - **run.py**: Script to execute all client codes. You can modify this script to select specific clients for execution on each edge device.
 
 ## Requirements
