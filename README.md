@@ -19,7 +19,7 @@ To run the FDG_CM algorithm, you will need:
 
 - One CPU core per client node.
 - For example, to run 16 clients, you will require 4 Raspberry Pis, each equipped with 4 CPU cores.
-- Using RabbitMQ borker for routing messages.
+- Using RabbitMQ broker for routing messages.
 
 ## Instructions
 
