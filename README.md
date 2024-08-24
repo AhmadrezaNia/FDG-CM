@@ -24,7 +24,8 @@ To run the FDG_CM algorithm, you will need:
 ## Instructions
 
 1. Navigate to the `src/` folder.
-2. Use the `run.py` script to execute the desired clients.
+2. Modify the Clients to use the data you want.
+3. Use the `run.py` script to execute the desired clients.
 
 Feel free to modify `run.py` to fit your specific deployment needs.
 
