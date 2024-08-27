@@ -6,7 +6,6 @@ This repository presents the algorithm developed in the FDG_CM paper (previously
 
 ## Paper Information
 
-
 The paper associated with this repository has been accepted to the *Journal of Manufacturing Systems (JMS)* and is currently under review. Once finalized, it will provide a comprehensive overview of the FDG_CM algorithm and its applications.
 
 ## Repository Structure
