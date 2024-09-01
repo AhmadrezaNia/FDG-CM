@@ -52,8 +52,8 @@ The architecture enhances privacy by ensuring that raw data never leaves the loc
 
 The diagrams below illustrate the federated learning framework and edge-cloud architecture:
 
-![Federated Learning Paradigm](images/Structure_3.png)
-![Edge-Cloud Implementation](images/edge-cloud architecture.png)
+![Federated Learning Paradigm](Images/Structure.png)
+![Edge-Cloud Implementation](Images/edge.png)
 *Figure: Illustration of the proposed FDG-CM structure. The number of classes and neuron count in the personalized layers (blue and orange) can vary for each domain group.*
 
 This approach is designed to improve the performance of the final models, particularly in tasks requiring domain generalization. Unlike other approaches, such as FedPer, which restricts collaboration by not sharing personalized layers, our framework enables separate aggregation of common personalized layers among clients with identical tasks and domain groups.
