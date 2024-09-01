@@ -23,10 +23,7 @@ To run the FDG_CM algorithm, you will need:
 
 ## Installation and Setup
 
-1. Install Docker and set up the RabbitMQ container:
-    ```bash
-    docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password -p 5672:5672 -p 15672:15672 rabbitmq:3-management
-    ```
+1. Install Docker and set up the RabbitMQ container.
    Replace `user`, `password`, and other parameters with your specific configurations.
 
 2. Ensure that you modify the IP address, password, and virtual host settings in the code to match your environment before running the application.
@@ -53,10 +50,10 @@ The edge-cloud architecture implemented in this paradigm supports efficient fede
 
 The architecture enhances privacy by ensuring that raw data never leaves the local edge devices, and only model updates are shared. This approach is particularly suitable for manufacturing settings, where data privacy and latency are critical concerns.
 
-The diagram below illustrates the federated learning framework and edge-cloud architecture:
+The diagrams below illustrate the federated learning framework and edge-cloud architecture:
 
-![Federated Learning Paradigm](images/federated_learning_paradigm.png)
-
+![Federated Learning Paradigm](images/Structure_3.png)
+![Edge-Cloud Implementation](images/edge-cloud architecture.png)
 *Figure: Illustration of the proposed FDG-CM structure. The number of classes and neuron count in the personalized layers (blue and orange) can vary for each domain group.*
 
 This approach is designed to improve the performance of the final models, particularly in tasks requiring domain generalization. Unlike other approaches, such as FedPer, which restricts collaboration by not sharing personalized layers, our framework enables separate aggregation of common personalized layers among clients with identical tasks and domain groups.
