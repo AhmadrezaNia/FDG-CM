@@ -2,8 +2,6 @@
 
 This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm introduces a novel Federated Domain Generalization (FDG) paradigm specifically tailored for condition monitoring in manufacturing processes. Our framework has been tested on ultrasonic metal welding data but is designed to be extensible to other types of condition monitoring data.
 
-**Note:** The code is currently under development and may undergo further changes.
-
 ## Paper Information
 
 The paper associated with this repository has been accepted by the *Journal of Manufacturing Systems (JMS)* and is currently under review. Once finalized, it will provide a comprehensive overview of the FDG_CM algorithm and its applications.
