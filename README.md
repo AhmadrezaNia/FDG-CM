@@ -1,8 +1,8 @@
 # Federated Domain Generalization Algorithm for Condition Monitoring (FDG-CM)
 
-This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm is a novel Federated Domain Generalization (FDG) technique designed specifically for condition monitoring in manufacturing processes. This framework has been tested on Ultrasonic metal welding data but can be extensible on other condition monitoring data. 
+This repository presents the algorithm developed in the FDG_CM paper (previously named FTL-TP). This algorithm introduces a novel Federated Domain Generalization (FDG) paradigm specifically tailored for condition monitoring in manufacturing processes. Our framework has been tested on ultrasonic metal welding data but is designed to be extensible to other types of condition monitoring data.
 
-**Note:** The code is currently under development and is not yet complete.
+**Note:** The code is currently under development and may undergo further changes.
 
 ## Paper Information
 
@@ -15,22 +15,52 @@ The paper associated with this repository has been accepted by the *Journal of M
 
 ## Requirements
 
-
 To run the FDG_CM algorithm, you will need:
 
 - One CPU core per client node.
 - For example, to run 16 clients, you will require 4 Raspberry Pis, each equipped with 4 CPU cores.
-- Using RabbitMQ broker for routing messages.
-- Using Docker as a container 
+- [Docker](https://www.docker.com/) installed to manage and run containerized environments.
+- [RabbitMQ](https://www.rabbitmq.com/) broker for message routing.
+- Python (version 3.8 or higher) with necessary libraries (see `requirements.txt`).
+
+## Installation and Setup
+
+1. Install Docker and set up the RabbitMQ container by running:
+    ```bash
+    docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+    ```
+   Replace `user`, `password`, and other parameters with your specific configurations.
+
+2. Ensure that you modify the IP address, password, and virtual host settings in the code to match your environment before running the application.
 
 ## Instructions
 
 1. Navigate to the `src/` folder.
-2. Modify the Clients to use the data you want.
+2. Modify the client scripts to use the data of your choice.
 3. Use the `run.py` script to execute the desired clients.
 
-Feel free to modify `run.py` to fit your specific deployment needs.
+Feel free to customize `run.py` and other files according to your deployment needs.
 
-### Author Links
-Link to the Arxiv paper: 
-https://arxiv.org/abs/2404.13278
+## Federated Learning Paradigm
+
+In this implementation, we built the federated learning paradigm from scratch to ensure the flexibility needed for our specific use case and to implement the custom algorithms presented in the paper. The paradigm allows for the integration of multiple edge devices, each running its local model, while only sharing model updates with a central server, thereby preserving data privacy.
+
+### Paradigm Overview
+
+Our framework enables knowledge transfer between at least two domain groups with the same feature space. By training the initial layers across various domain groups, the model collaboratively extracts low-level features from the common feature space, thus broadening the data pool for shared layers and allowing them to learn from different domains. The framework then personalizes the final model for each domain group by training a set of upper layers on data from clients within the same domain group. This results in a comprehensive neural network (NN) model with shared and task-specific components.
+
+The image below illustrates our federated learning framework:
+
+![Federated Learning Paradigm](path/to/image.png)
+
+*Figure: Illustration of the proposed FDG-CM structure. The number of classes and neuron count in the personalized layers (blue and orange) can vary for each domain group.*
+
+This approach is designed to improve the performance of the final models, particularly in tasks requiring domain generalization. Unlike other approaches, such as FedPer, which restricts collaboration by not sharing personalized layers, our framework enables separate aggregation of common personalized layers among clients with identical tasks and domain groups.
+
+## Data Availability
+
+The data used in this research is private and can be made available upon reasonable request.
+
+## Author Links
+
+- [Link to the Arxiv paper](https://arxiv.org/abs/2404.13278)
