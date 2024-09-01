@@ -23,7 +23,10 @@ To run the FDG_CM algorithm, you will need:
 
 ## Installation and Setup
 
-1. Install Docker and set up the RabbitMQ container.
+1. Install Docker and set up the RabbitMQ container:
+    ```bash
+    docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+    ```
    Replace `user`, `password`, and other parameters with your specific configurations.
 
 2. Ensure that you modify the IP address, password, and virtual host settings in the code to match your environment before running the application.
@@ -44,9 +47,15 @@ In this implementation, we built the federated learning paradigm from scratch to
 
 Our framework enables knowledge transfer between at least two domain groups with the same feature space. By training the initial layers across various domain groups, the model collaboratively extracts low-level features from the common feature space, thus broadening the data pool for shared layers and allowing them to learn from different domains. The framework then personalizes the final model for each domain group by training a set of upper layers on data from clients within the same domain group. This results in a comprehensive neural network (NN) model with shared and task-specific components.
 
-The image below illustrates our federated learning framework:
+### Edge Cloud Architecture
 
-![Federated Learning Paradigm](path/to/image.png)
+The edge-cloud architecture implemented in this paradigm supports efficient federated learning across multiple distributed devices. The architecture consists of edge devices (such as Raspberry Pis or other edge computing units) that locally process and train models on their own data. These edge devices only share model updates (gradients or parameters) with a central server located in the cloud, which aggregates these updates to improve a global model.
+
+The architecture enhances privacy by ensuring that raw data never leaves the local edge devices, and only model updates are shared. This approach is particularly suitable for manufacturing settings, where data privacy and latency are critical concerns.
+
+The diagram below illustrates the federated learning framework and edge-cloud architecture:
+
+![Federated Learning Paradigm](images/federated_learning_paradigm.png)
 
 *Figure: Illustration of the proposed FDG-CM structure. The number of classes and neuron count in the personalized layers (blue and orange) can vary for each domain group.*
 
