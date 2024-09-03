@@ -27,8 +27,12 @@ To run the FDG_CM algorithm, you will need:
    Replace `user`, `password`, and other parameters with your specific configurations.
 
 2. Ensure that you modify the IP address, password, and virtual host settings in the code to match your environment before running the application.
+The required Python libraries for this project are listed in the `requirements.txt` file. To install these dependencies, run:
 
+```bash
+pip install -r requirements.txt
 ## Instructions
+```
 
 1. Navigate to the `src/` folder.
 2. Modify the client scripts to use the data of your choice.
