@@ -32,9 +32,10 @@ To run the FDG_CM algorithm, you will need:
 
 ```bash
 pip install -r requirements.txt
-## Instructions
+
 ```
 
+## Instructions
 1. Navigate to the `src/` folder.
 2. Modify the client scripts to use the data of your choice.
 3. Use the `run.py` script to execute the desired clients.
