@@ -50,7 +50,7 @@ In this implementation, we built the federated learning paradigm from scratch to
 
 Our framework enables knowledge transfer between at least two domain groups with the same feature space. By training the initial layers across various domain groups, the model collaboratively extracts low-level features from the common feature space, thus broadening the data pool for shared layers and allowing them to learn from different domains. The framework then personalizes the final model for each domain group by training a set of upper layers on data from clients within the same domain group. This results in a comprehensive neural network (NN) model with shared and task-specific components.
 
-### Edge Cloud Architecture
+### Edge-Cloud Architecture
 
 The edge-cloud architecture implemented in this paradigm supports efficient federated learning across multiple distributed devices. The architecture consists of edge devices (such as Raspberry Pis or other edge computing units) that locally process and train models on their own data. These edge devices only share model updates (gradients or parameters) with a central server located in the cloud, which aggregates these updates to improve a global model.
 
