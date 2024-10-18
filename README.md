@@ -71,4 +71,4 @@ The data used in this research is private and can be made available upon reasona
 
 ## Author Links
 
-- [Link to the paper]([https://authors.elsevier.com/c/1jy8R-MM8XUkt])
+- [Link to the paper](https://authors.elsevier.com/c/1jy8R-MM8XUkt)
