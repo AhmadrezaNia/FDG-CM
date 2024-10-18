@@ -4,7 +4,7 @@ This repository presents the algorithm developed in the FDG_CM paper (previously
 
 ## Paper Information
 
-The paper associated with this repository has been published in the *Journal of Manufacturing Systems (JMS)*. You can find paper here: https://authors.elsevier.com/c/1jy8R-MM8XUkt
+The paper associated with this repository has been published in the *Journal of Manufacturing Systems (JMS)*.
 
 ## Repository Structure
 
@@ -71,4 +71,4 @@ The data used in this research is private and can be made available upon reasona
 
 ## Author Links
 
-- [Link to the Arxiv paper](https://arxiv.org/abs/2404.13278)
+- [Link to the paper]([https://arxiv.org/abs/2404.13278](https://authors.elsevier.com/c/1jy8R-MM8XUkt))
